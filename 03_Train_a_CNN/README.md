@@ -47,7 +47,7 @@ This uses the default list of packages to be installed.
 
 ## Manually install Tensorflow
 
-Tensorflow is very easy to install if you are happy to use CPU processing.  This is the recommended way to get started.
+Tensorflow is very easy to install if you are happy to use CPU processing.  This is the recommended way to get started.  We need Tensorflow 2
 
 Should you want to do this by hand, just enter the following when you have activated the virtual environment:
 
@@ -55,7 +55,7 @@ Should you want to do this by hand, just enter the following when you have activ
 python -m pip install tensorflow
 ```
 
-This will install the latest version of Tensorflow which is something like version 2.6 at the time of writing.  Should you need an earlier version, you would ideally find the exact version number from [https://pypi.org/project/tensorflow/#history] and enter it like so:
+This will install the latest version of Tensorflow which is something like version 2.6 at the time of writing.  Should you need an earlier version, you would ideally find the exact version number from https://pypi.org/project/tensorflow/#history and enter it like so:
 
 ```
 python -m pip install tensorflow==2.6.0
@@ -70,12 +70,12 @@ GPU Support
 
 If you want or need GPU support, this begins to get a bit problematic.  The easiest way to _install_ with GPU support is to use Anaconda
 and create a dedicated virtual environment for it.  This will usually sort out the tricky details regarding correct version cuDNN installation
-as needed by your platform, but can make it a bit difficult 
+as needed by your platform.  This is probably the easiest route for beginners.
 
-A useful guide can be found at [https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/]
-
+A useful guide can be found at https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/
 
 <br>
+
 ## How to run the code
 
 You need to start a Jupyter Notebook, load the `.pynb` file and run the cells.
