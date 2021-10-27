@@ -1,0 +1,7 @@
+wheel
+jupyter
+matplotlib
+numpy
+tensorflow==2.6.0
+nibabel
+scikit-image
