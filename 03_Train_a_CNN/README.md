@@ -1,5 +1,4 @@
 # R4 Python: 03 Train a CNN - a.k.a. 'Frog or Not'
-_____________________________________________
 
 <br>
 
@@ -17,7 +16,7 @@ however if you want to use GPU acceleration you may need to install a specific v
 
 A separate virtual environment for each mini-project is easiest to manage.
 
-Navigate to the correct directory (where this `README.md` is located) in the command line and exter this command:
+Navigate to the correct directory (where this `README.md` is located) in the command line and enter these commands:
 
 ```
 python -m venv r4env
@@ -34,34 +33,41 @@ Your command line prompt should change and look something like this:
 
 ## Pip install the Python Packages
 
-Navigate to the correct directory (where this `README.md` is located) in the command line and exter this command:
+Navigate to the correct directory (where this `README.md` is located) in the command line and enter this command:
 
 ```
 python -m pip install -r requirements.txt
 ```
 
-This uses the default list of packages to be installed.
+This installs the required packages from a pre-configured list held in `requirements.txt`.
 
 
 <br>
 
-## Manually install Tensorflow
+## Manually install a specific version of Tensorflow
 
-Tensorflow is very easy to install if you are happy to use CPU processing.  This is the recommended way to get started.  We need Tensorflow 2
+Tensorflow is very easy to install if you are happy to use CPU processing.  This is the recommended way to get started.  We need Tensorflow 2 for this project.
 
-Should you want to do this by hand, just enter the following when you have activated the virtual environment:
+While v2.6.0 is installed by default (see the above method), you can install the latest version like this (version 2.6.0 at the time of writing):
 
 ```
 python -m pip install tensorflow
 ```
 
-This will install the latest version of Tensorflow which is something like version 2.6 at the time of writing.  Should you need an earlier version, you would ideally find the exact version number from https://pypi.org/project/tensorflow/#history and enter it like so:
+Should you need a specific version, you would ideally find the exact version number from https://pypi.org/project/tensorflow/#history and install it like so:
+
+Note that you may need to remove the existing verison first:
+
+```
+python -m pip uninstall tensorflow
+```
+
+then install:
 
 ```
 python -m pip install tensorflow==2.6.0
 ```
     
-for the current latest version.
 
 <br><br>
 
@@ -76,7 +82,8 @@ A useful guide can be found at https://docs.anaconda.com/anaconda/user-guide/tas
 
 <br>
 
-## How to run the code
+How to run the code
+===================
 
 You need to start a Jupyter Notebook, load the `.pynb` file and run the cells.
 
