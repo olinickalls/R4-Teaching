@@ -1,4 +1,6 @@
+wheel
 jupyter
+notebook
 numpy
 Pillow
 pydicom
