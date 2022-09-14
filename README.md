@@ -20,9 +20,11 @@ command line or from the IDE/environment of your choice, the most well known bei
 
 You will require Python version 3.6 or higher.  I generally run Python 3.7 (latest 3.7 version is 3.7.12 at the time of writing) though later versions up to and including 3.10 _should_ run OK.  Please contact me if you have any issues.
 
+Of note, there were significant improvements in error messages in 3.10 and I would recommend using at least this version if you are starting out to lear Python.
+
 - Python Download https://www.python.org/downloads/
 
-The code is specifically designed to be as platform-agnostic as possible, and should run on PC, MacOs and Linux without too much fuss.
+The code is _generally_ designed to be as platform-agnostic as possible, and should _generally_ run on PC, MacOs and Linux without too much fuss.  Do note that I am coding this on Windows - if you run into any bugs, please do tell me, or even better, raise a pull request.
 
 While Anaconda (https://www.anaconda.com/) is a very good package that makes some of this easier, it comes with its own problems.  Should you want to work more with GPU acceleration and difficult to install scientific tools, Anaconda is excellent.  For these lectures, unless you know what you are doing, I advise using the 'simple' Python installation from Python.org as above.
 
@@ -30,14 +32,17 @@ While Anaconda (https://www.anaconda.com/) is a very good package that makes som
 
 Each subfolder contains a mini-project that has been created specifically for the R4 lectures.
 
-Each project has its own `requirements.txt` file which can instruct Python to install all the necessary packages from the Python Package Index (PyPI).  You will need an internet connection for this.  Some of the packages are fairly large (several hundred MB) so plan accordingly.
+Each project has its own `requirements.txt` file which can instruct Python to install all the necessary packages from the online Python Package Index (PyPI).  You will need an internet connection for this.  Some of the packages are fairly large (several hundred MB) so plan accordingly.
 
 In general, when I include command line text or filenames they will appear `like this`.  I use Windows, so unless otherwise specified, they will be suitable for the Windows command line (`cmd.exe`).  Should there be enough demand, I will add Mac shell and maybe Linux shell (Bash) commands as well.
 
+How to use a `requirements.txt` file?  Firstly, make sure you are in the correct virtual environment (if you are using them- it is recommended!) and the same directory as the file, then type:
 
-I strongly advise you to spend the time to understand (or at least use) _virtual environments_.  This allows you to separate python 'environments', and allow different versions of installed packages to exist on your computer at the same time.  This may not make much sense initially and it can be confusing at first, however feel free to ignore these as they are not totally necessary while you start out.
+`python -m pip install -r requirements.txt`
 
-If you find yourself requiring Tensorflow 1.x installed for one project but need Tensorflow version 2.x for another, using virtual environments is the best way to go.
+(NB- I am using `python` - this may not be the case in your system- specifically MacOs, where you may need to use `python3` instead)
+
+I strongly advise you to spend the time to understand (or at least use) _virtual environments_.  This allows you to separate python 'environments', and allow different versions of installed packages to exist on your computer at the same time.  However, at the same time, do feel free to ignore this.  They are not absolutely necessary while you are just starting out.
 
 ### Installing Packages in Python
 
@@ -49,7 +54,7 @@ You can find the package in PyPI here: https://pypi.org/project/pydicom/
 
 `python -m pip install pydicom`
 
-The observant ones among you will notice that there is code you can copy direct from the website above, although the code sample I included above is a bit more reliable when you have more than one copy of Python installed.  I recommend using `python -m pip` whenever pip is used.
+The observant ones among you will notice that there is code you can copy direct from the PyPI website above, although the code sample I included above is a bit more reliable when you have more than one copy of Python installed.  I recommend using `python -m pip`.
 
 ### Jupyter
 
