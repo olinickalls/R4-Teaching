@@ -1,5 +1,5 @@
-# National Radiology R4 Python Lectures
-=====================================
+# National Radiology R4 Lecture: Python
+=======================================
 
 Created and maintained by Oliver Nickalls. Please contact me via my work email (find me in the eDirectory) or message me via GitHub.
 
