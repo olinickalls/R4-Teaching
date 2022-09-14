@@ -43,7 +43,7 @@ If you find yourself requiring Tensorflow 1.x installed for one project but need
 
 This is, in general, very easy.  There are literally _hundreds of thousands_ of packages available for installation in PyPI.  I will just scratch the surface here.
 
-Let's install the main package we use to handle DICOM.  These are instructions for the Windows command line, although Mac and Linux are almost identical.  
+As an example, let's install pydicom - the main package we use to handle DICOM.  These are instructions for the Windows command line, although Mac and Linux are almost identical.
 
 You can find the package in PyPI here: https://pypi.org/project/pydicom/
 
@@ -53,5 +53,5 @@ The observant ones among you will notice that there is code you can copy direct 
 
 ### Jupyter
 
-We use this in most projects and I suggest 
-
+We use this in most projects and I suggest you install this first.  This is the most accessible way to code in Python and is widely used in data science and scientific
+coding.
